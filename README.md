@@ -2,7 +2,7 @@
 hear is Carplay AccessorySDK
 
 
-Carplay的sdk希望有大神可以移植成功
+Carplay的sdk希望有大神可以移植成功（缺少极少部分.h头文件无法编译成功）
 1. R12d 插件源码结构与R11之间的差异
 
 R12d源码结构与R11有差异较大，去掉了IPC方式，增加了AccessorySDK、Transport目录， 并且AccessorySDK目录下也有个makefile。之前有的目录内容也完全不一样了，支持无线CarPlay方式，要求使用mDNSResponder-567版本的Bonjour。
