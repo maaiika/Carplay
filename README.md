@@ -1,5 +1,20 @@
 # Carplay
-hear is Carplay AccessorySDK
+hear is Carplay AccessorySDK 
+a carplay client useing c++ on POSIX (maybe need mfi chipsit) leak version
+how to build:
+dep:
+bison==2.5.1
+Bonjour(mDNSResponder)==567(build first)
+
+rename carplay to CarPlay_Plugin
+cd CarPlay_Plugin\PlatformPOSIX
+edit Makefile
+#COMMON_WARNINGS += -Werror
+COMMONFLAGS += -fPIC
+
+make os=linux(Linux)
+
+missing mh_carplay.h
 
 
 Carplay的sdk希望有大神可以移植成功（缺少极少部分.h头文件无法编译成功）
